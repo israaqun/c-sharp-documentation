@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C# Documentaion</title>
+
+    <!--css file -->
+
+    <link rel="stylesheet" href="assets/vendor/css/all.min.css">
+    <!--bootsrap css -->
+
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css ">
+    <!--font awesome -->
+    <link rel="stylesheet" href="assets/vendor/webfonts/">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css">
+    <!--custome css-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <h2>Documentaion</h2>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Syntax">Syntax</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Type_Casting">Type Casting</a>
+        <a class="nav-link" href="#User_Input">User Input</a>
+        <a class="nav-link" href="#Booleans">Booleans</a>
+    </nav>
+
+   
+    <main id="main-doc">
+        <div class="title fw-bold mb-5"> <h1> C# Documentation</h1></div>
+        <section class="main-section" id="Introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to our Technical Documentation! Learn about C# programming.</p>
+        </section>
+
+        <section class="main-section" id="Syntax">
+            <h2>Syntax</h2>
+            <p>Syntax is the structure of statements , Here is a simple program typed in C# to discuss the meaning of
+                syntax</p>
+            <div class="code">
+                <pre><code>        using System;
+                    namespace Hello
+                    {
+                        class MyProgram
+                        {
+                            static void Main(string[] args)
+                            {
+                                /* That is my first program
+                                I created it today*/
+                                // Printing text to console and filling the rest of that line
+                                Console.WriteLine("Hello World!");
+                                // Printing text to console without filling the rest of that line
+                                Console.Write("Hello ");
+                                Console.WriteLine("AAA");
+                            }
+                        }
+                    }</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <h2>Data Types</h2>
+            <p>Some data types that are supported by C# :-</p>
+            <ol>
+                <li>integer (int) ... 1 , 500 , -200</li>
+                <li>double (double) ... 0.5 , 3.14 , -2.5</li>
+                <li>string (string) ... "AAA" , "What is your name ?"</li>
+                <li>character (char) ... 'A' , '+' , '5'</li>
+                <li>boolean (bool) ... true , false</li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <h2>Variables</h2>
+            <p>Variables are containers for storing data values.</p>
+            <p>The syntax for declaring a variable and assigning a value to it is as following :</p>
+            <div class="code">
+                <pre><code>data-type variable-name = value(data) ;</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+            <p >For example :-</p>
+            <div class="code">
+                <pre><code>int age = 20 ;
+          string FirstName = "AAA" ;
+          string full_name = "AAA BBB" ;
+          double _degree = 80.5 ;
+          char grade = 'A' ;
+          bool student = true ;
+          bool male = true ;</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+
+        </section>
+
+        <section class="main-section" id="Type_Casting">
+            <h1>Type Casting</h1>
+            <p>Type casting means turning a certain data from a type to another one.</p>
+            <p>Syntax for type casting is :-</p>
+            <div class="code">
+                <pre><code>(data-type) data</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+            <p>For example :-</p>
+            <div class="code">
+                <pre><code>double pi = 3.14 ;
+                    int myInt = (int) pi ;
+                    Console.WriteLine(pi) ; // 3.14
+                    Console.WriteLine(myInt) ; // 3</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+
+        </section>
+
+        <section class="main-section" id="User_Input">
+            <h2>User Input</h2>
+            <p>You already know that Console.WriteLine() is used to output text.</p>
+            <p>Now you are going to learn how to use Console.ReadLine() to get user input.</p>
+            <div class="code">
+                <pre><code>Console.ReadLine();</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+            <p>For example :-</p>
+            <div class="code">
+                <pre><code>int age ;
+         Console.Write("Enter your age:") ;
+         age = Console.ReadLine() ;
+         Console.WriteLine("You are " + age + " years old") ;</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+        </section>
+
+        <section class="main-section" id="Booleans">
+            <h2>Booleans</h2>
+            <p>Booleans are data types that can be used to control whether something is true or false(yes or no / on or
+                off).</p>
+            <div class="code">
+                <pre><code>bool male = true ;
+        bool student = true ;
+        bool permission_accepted = false ;</code></pre>
+                <span class="copy-btn" onclick="copyToClipboard(this)"><i class="fas fa-copy"></i></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- bootstrap js file -->
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"> </script>
+    <!-- custom js file -->
+         <!-- sweet alert -->
+         <script src="assets/vendor/js/sweetalert2.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
